@@ -6,6 +6,8 @@
     </div>
     <div class="offcanvas-body">
       <div>
+        <div v-if="cart.length == 0">Your cart has no items</div>
+
         <ul class="list-group">
           <li class="list-group-item" v-for="item in cart">
             <CartItem :item="item"/>
